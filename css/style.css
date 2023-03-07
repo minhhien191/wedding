@@ -424,6 +424,7 @@ input[type=radio]:checked:before {
 .container {
     padding-right: 60px;
     padding-left: 60px;
+    /* padding-bottom: 450px; */
 }
 
 .section-padding {
