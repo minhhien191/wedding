@@ -120,25 +120,25 @@
         }
     });
     // When & Where owlCarousel
-    $('.whenwhere .owl-carousel').owlCarousel({
-        loop: true,
-        margin: 30,
-        mouseDrag: true,
-        autoplay: false,
-        dots: true,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 3
-            }
-        }
-    });
+    // $('.whenwhere .owl-carousel').owlCarousel({
+    //     loop: true,
+    //     margin: 30,
+    //     mouseDrag: true,
+    //     autoplay: false,
+    //     dots: true,
+    //     responsiveClass: true,
+    //     responsive: {
+    //         0: {
+    //             items: 1,
+    //         },
+    //         600: {
+    //             items: 1
+    //         },
+    //         1000: {
+    //             items: 3
+    //         }
+    //     }
+    // });
 
     // Gift Registry owlCarousel
     $('.gift .owl-carousel').owlCarousel({
@@ -231,6 +231,16 @@
         }
     });
 
+    $(".whenwhere-img").magnificPopup({
+        type: "image",
+        closeOnContentClick: !0,
+        mainClass: "mfp-fade",
+        gallery: {
+            enabled: !0,
+            navigateByImgClick: !0,
+            preload: [0, 1]
+        }
+    });
     // RSVP FORM 
     var form = $('.contact__form'),
         message = $('.contact__msg'),
