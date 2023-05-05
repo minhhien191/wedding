@@ -284,11 +284,14 @@
         minute = second * 60,
         hour = minute * 60,
         day = hour * 24;
-    let birthday = "Apr 30, 2023 00:00:00",
+    let birthday = "Apr 30, 2024 00:00:00",
         countDown = new Date(birthday).getTime(),
         x = setInterval(function() {
             let now = new Date().getTime(),
                 distance = countDown - now;
+                if (distance < 0){
+                    distance = 0
+                }
 
             document.getElementById("days").innerText = Math.floor(distance / (day)),
                 document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
